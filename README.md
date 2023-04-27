@@ -7,6 +7,7 @@
 - A computer
 - Ansible installed
 - Python3 installed
+- "WinRM" module installed on python3
 - A Windows Server that you want to manage
 - A Zabbix server that will manage it
 
