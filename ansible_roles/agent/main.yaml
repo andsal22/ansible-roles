@@ -1,0 +1,15 @@
+- name: Download Zabbix agent
+  win_get_url:
+    url: "https://cdn.zabbix.com/zabbix/binaries/stable/{{ zabbix_short_version }}/{{ zabbix_agent_version }}/zabbix_agent-{{ zabbix_agent_version }}-windows-amd64-openssl.msi"
+    dest: C:\Users\Public\Downloads\zab_ag_install.msi
+
+- name: Install Zabbix agent
+  win_package:
+    path: C:\Users\Public\Downloads\zab_ag_install.msi
+    arguments: '/qn Server={{ zabbix_server_ip }} ServerPort={{ zabbix_server_port }}'
+
+- name: Configure Zabbix agent
+  win_template:
+    src: zabbix_agentd.conf.j2
+    dest: C:\Program Files\Zabbix Agent\zabbix_agentd.conf
+  register: conf_changed

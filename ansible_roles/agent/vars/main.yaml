@@ -1,0 +1,4 @@
+zabbix_short_version: "6.0"
+zabbix_agent_version: "6.0.15"
+zabbix_server_ip: "185.174.168.26"
+zabbix_server_port: "10050"

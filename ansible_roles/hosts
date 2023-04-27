@@ -1,0 +1,14 @@
+[win_host]
+185.174.168.10
+[win_host:vars]
+ansible_user=andoni
+ansible_password=45nKmJan7Zz7
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
+[zabbix_server]
+185.174.168.26
+[zabbix_server:vars]
+ansible_user=ansible
+ansible_password=Tolosa22
+ansible_become_password=Tolosa22

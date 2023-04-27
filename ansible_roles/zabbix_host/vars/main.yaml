@@ -1,0 +1,8 @@
+zabbix_host_ip: "185.174.168.10"
+zabbix_api_url: "http://185.174.168.26/zabbix/api_jsonrpc.php"
+zabbix_server_url: "http://185.174.168.26/zabbix"
+zabbix_user: "test"
+zabbix_password: "Tolosa22"
+zabbix_group_name: "Patata"
+zabbix_host_name: "Platano"
+zabbix_port: "10050"

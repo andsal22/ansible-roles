@@ -1,0 +1,9 @@
+- name: Install and configure agent
+  hosts: win_host
+  roles:
+    - agent
+
+- name: Add Zabbix host
+  hosts: zabbix_server
+  roles:
+    - zabbix_host
